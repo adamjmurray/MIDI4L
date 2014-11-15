@@ -17,8 +17,8 @@ your Max file search path.
 
 ## Code Dependencies (included in this project)
 
-MaxCpp: https://github.com/grrrwaaa/maxcpp
-RtMidi: http://www.music.mcgill.ca/~gary/rtmidi/
+MaxCpp: https://github.com/grrrwaaa/maxcpp   
+RtMidi: http://www.music.mcgill.ca/~gary/rtmidi/   
 See the source files for these dependencies in this project for license info.
 
 
