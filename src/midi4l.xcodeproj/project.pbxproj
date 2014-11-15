@@ -15,20 +15,21 @@
 		41B3C66519E0E246006FDBEA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3C66419E0E246006FDBEA /* CoreAudio.framework */; };
 		41B3C66719E0E251006FDBEA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3C66619E0E251006FDBEA /* CoreFoundation.framework */; };
 		41B3C66919E0EE59006FDBEA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3C66819E0EE59006FDBEA /* CoreServices.framework */; };
+		663613351A1700620065FF17 /* maxcpp6.h in Headers */ = {isa = PBXBuildFile; fileRef = 663613341A1700620065FF17 /* maxcpp6.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22CF10220EE984600054F513 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = maxmspsdk.xcconfig; path = ../../maxmspsdk.xcconfig; sourceTree = SOURCE_ROOT; };
 		22CF119A0EE9A8250054F513 /* midi4l.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = midi4l.cpp; sourceTree = "<group>"; };
 		22CF119D0EE9A82E0054F513 /* MaxAudioAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaxAudioAPI.framework; path = "../../../c74support/msp-includes/MaxAudioAPI.framework"; sourceTree = SOURCE_ROOT; };
-		2FBBEAE508F335360078DB84 /* midi4l.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = midi4l.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C5493616F558AA0054C037 /* maxcpp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxcpp6.h; sourceTree = "<group>"; };
+		2FBBEAE508F335360078DB84 /* midi4l.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = midi4l.mxo; path = "/Users/adam/workspace/maxmsp/MaxSDK-6.1.4/examples/MIDI4L/src/build/Development/midi4l.mxo"; sourceTree = "<absolute>"; };
 		41B3C65E19E0D1FE006FDBEA /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMidi.h; sourceTree = "<group>"; };
 		41B3C66019E0D207006FDBEA /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
 		41B3C66219E0E23B006FDBEA /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		41B3C66419E0E246006FDBEA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		41B3C66619E0E251006FDBEA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		41B3C66819E0EE59006FDBEA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		663613341A1700620065FF17 /* maxcpp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxcpp6.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,33 +55,23 @@
 				41B3C66619E0E251006FDBEA /* CoreFoundation.framework */,
 				41B3C66419E0E246006FDBEA /* CoreAudio.framework */,
 				41B3C66219E0E23B006FDBEA /* CoreMIDI.framework */,
-				36C5491F16F557E00054C037 /* maxcpp */,
 				22CF10220EE984600054F513 /* maxmspsdk.xcconfig */,
 				22CF119A0EE9A8250054F513 /* midi4l.cpp */,
-				41B3C65E19E0D1FE006FDBEA /* RtMidi.h */,
-				41B3C66019E0D207006FDBEA /* RtMidi.cpp */,
+				663613361A1700730065FF17 /* Dependencies */,
 				22CF119D0EE9A82E0054F513 /* MaxAudioAPI.framework */,
-				19C28FB4FE9D528D11CA2CBB /* Products */,
 			);
 			name = iterator;
 			sourceTree = "<group>";
 		};
-		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+		663613361A1700730065FF17 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				2FBBEAE508F335360078DB84 /* midi4l.mxo */,
+				41B3C65E19E0D1FE006FDBEA /* RtMidi.h */,
+				41B3C66019E0D207006FDBEA /* RtMidi.cpp */,
+				663613341A1700620065FF17 /* maxcpp6.h */,
 			);
-			name = Products;
+			name = Dependencies;
 			sourceTree = "<group>";
-		};
-		36C5491F16F557E00054C037 /* maxcpp */ = {
-			isa = PBXGroup;
-			children = (
-				36C5493616F558AA0054C037 /* maxcpp6.h */,
-			);
-			name = maxcpp;
-			path = ../../maxcpp;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -89,6 +80,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663613351A1700620065FF17 /* maxcpp6.h in Headers */,
 				41B3C65F19E0D1FE006FDBEA /* RtMidi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

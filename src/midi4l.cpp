@@ -1,3 +1,27 @@
+/**
+ * Copyright (c) 2014 Adam Murray and James Westfall
+ * https://github.com/adamjmurray
+ * https://github.com/aumhaa
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
 #include <map>
 #include "RtMidi.h"
 #include "maxcpp6.h"
@@ -5,7 +29,7 @@
 typedef std::map<t_symbol*,int> portmap;
 typedef std::vector<unsigned char> midimessage;
 
-const int MAX_STR_SIZE = 512;
+const int MAX_STR_SIZE    = 512;
 
 const int OUTLET_MIDI     = 0;
 const int OUTLET_SYSEX    = 1;
@@ -15,10 +39,10 @@ const int OUTLET_OUTPORTS = 3;
 const int SYSEX_START = 0xF0;
 const int SYSEX_STOP  = 0xF7;
 
-t_symbol *SYM_APPEND = gensym("append");
-t_symbol *SYM_CLEAR  = gensym("clear");
-t_symbol *SYM_SET    = gensym("set");
-t_symbol *SYM_NONE  = gensym("<none>");
+t_symbol *SYM_APPEND  = gensym("append");
+t_symbol *SYM_CLEAR   = gensym("clear");
+t_symbol *SYM_SET     = gensym("set");
+t_symbol *SYM_NONE    = gensym("<none>");
 
 void midiInputCallback(double deltatime, midimessage *message, void *userData);
 
